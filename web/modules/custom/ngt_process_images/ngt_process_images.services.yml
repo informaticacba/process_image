@@ -1,0 +1,7 @@
+services:
+  ngt_process_images.methodGeneral:
+      class: Drupal\ngt_process_images\methodGeneral
+      arguments: []
+  ngt_process_images.upload_image:
+    class: Drupal\ngt_process_images\Plugin\Config\Block\UploadImagesBlockClass
+    arguments: []

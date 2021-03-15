@@ -1,0 +1,5 @@
+name: ngt_generate_pdf
+type: module
+description: Módulo con las funciones y clases de FPDF para generar pdf
+core_version_requirement: ^8.8 || ^9
+package: NGT

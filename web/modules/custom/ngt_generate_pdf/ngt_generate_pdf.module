@@ -1,0 +1,44 @@
+<?php
+
+/**
+ * @file
+ * Contains ngt_generate_pdf.module..
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+use Drupal\Core\Form\FormState;
+use Drupal\Core\Form\FormStateInterface;
+use Drupal\file\Entity\File;
+
+/**
+ * Implements hook_help().
+ */
+function ngt_generate_pdf_help($route_name, RouteMatchInterface $route_match) {
+    switch ($route_name) {
+        // Main module help for the ngt module.
+        case 'help.page.ngt_generate_pdf':
+            $output = '';
+            $output .= '<h3>' . t('About') . '</h3>';
+            $output .= '<p>' . t('ngt generate pdf') . '</p>';
+        return $output;
+
+    default:
+    }
+}
+
+
+/**
+ * Implements hook_theme().
+ */
+function ngt_generate_pdf_theme() {
+    return [
+      'preview' => [
+        'variables' => [
+          'image' => NULL,
+          'height' => NULL,
+          'width' => NULL
+        ],
+        'template' => 'block--preview-images',
+      ],
+    ];
+  }

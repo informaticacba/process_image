@@ -1,0 +1,43 @@
+<?php
+
+/**
+ * @file
+ * Contains ngt_general.module..
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+use Drupal\Core\Form\FormState;
+use Drupal\Core\Form\FormStateInterface;
+use Drupal\file\Entity\File;
+
+/**
+ * Implements hook_help().
+ */
+function ngt_general_help($route_name, RouteMatchInterface $route_match) {
+    switch ($route_name) {
+        // Main module help for the ngt module.
+        case 'help.page.ngt_general':
+            $output = '';
+            $output .= '<h3>' . t('About') . '</h3>';
+            $output .= '<p>' . t('ngt general') . '</p>';
+        return $output;
+
+    default:
+    }
+}
+
+
+
+/**
+ * Implements hook_preprocess().
+ * 
+ * Prepares variables for the html.html.twig template.
+ * Inlcuye la directiva de angular la etiqueta html
+ * 
+ */
+function ngt_general_preprocess_html(&$variables){
+  $variables['html_attributes']['data-ng-app'] = 'ngtApp';
+  $variables['#attached']['library'][] = 'ngt_general/angular.ngt';
+}
+
+

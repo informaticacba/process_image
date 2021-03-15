@@ -1,0 +1,7 @@
+preview:
+    path: 'ngt/general/process/images/preview/{fid}/{orientation}'
+    defaults:
+        _controller: '\Drupal\ngt_generate_pdf\Controller\PreviewControllerPdf::preview'
+        _title: 'Preview'
+    requirements:
+        _access: 'TRUE'

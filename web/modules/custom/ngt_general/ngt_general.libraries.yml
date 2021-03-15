@@ -1,0 +1,31 @@
+angular.angularjs:
+  remote: https://github.com/angular/angular.js
+  version: 1.5.8
+  license:
+    name: MIT
+    url: https://github.com/angular/angular.js/blob/master/LICENSE
+    gpl-compatible: true
+  js:
+    js/vendor/angular/angular.js: { minified: true }
+    js/vendor/angular/angular-sanitize.js: { minified: true }
+
+angular.request:
+  version: 1.5.8
+  license:
+    name: MIT
+    url: https://github.com/angular/angular.js/blob/master/LICENSE
+    gpl-compatible: true
+  js:
+    js/vendor/angular/angular-resource.js: { minified: true }
+
+angular.ngt:
+  version: 1.x
+  js:
+    js/app.js: {}
+    js/angular_chart.js: {}
+    js/Chart.min.js: { minified: true }
+    js/angular-chart.min.js: { minified: true }
+    js/vendor/angular/angular-materialize.min.js: { minified: true }
+  dependencies:
+    - ngt_general/angular.angularjs
+    - ngt_general/angular.request

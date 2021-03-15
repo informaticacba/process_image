@@ -1,0 +1,9 @@
+upload-images:
+  version: 1.x
+  js:
+    js/directive/upload_images.js: {}
+    js/jquery.mask.min.js: {}
+  dependencies:
+    - core/jquery
+    - core/drupalSettings
+    - ngt_general/angular.ngt

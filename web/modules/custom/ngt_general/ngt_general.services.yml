@@ -1,0 +1,5 @@
+services:
+  ngt_general.methodGeneral:
+    class: Drupal\ngt_general\methodGeneral
+    arguments: []
+    

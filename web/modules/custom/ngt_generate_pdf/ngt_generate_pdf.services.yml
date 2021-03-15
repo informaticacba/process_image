@@ -1,0 +1,5 @@
+services:
+  ngt_generate_pdf.fpdf:
+    class: Drupal\ngt_generate_pdf\methodGeneral
+    arguments: []
+    

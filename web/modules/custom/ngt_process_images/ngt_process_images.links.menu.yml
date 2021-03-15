@@ -1,0 +1,6 @@
+ngt.admin_process_images_form:
+  title: 'NGT Configuracion general para procesamiento de imagenes'
+  route_name: 'ngt.admin_process_images_form'
+  description: 'Configuración general para carga de imágenes'
+  parent: system.admin_config_system
+  weight: 99

@@ -1,0 +1,7 @@
+name: ngt_process_images
+type: module
+description: Módulo con las funciones para el procesamiento de imágenes
+core_version_requirement: ^8.8 || ^9
+package: NGT
+dependencies:
+  - ngt_general

@@ -1,0 +1,25 @@
+{
+  "name": "drupal/imagick",
+  "description": "Imagick toolkit for image manipulation within Drupal.",
+  "type": "drupal-module",
+  "license": "GPL-2.0+",
+  "keywords": [
+    "php",
+    "imagick",
+    "drupal"
+  ],
+  "homepage": "https://www.drupal.org/project/imagick",
+  "minimum-stability": "dev",
+  "require": {
+    "drupal/core": "^8.8 || ^9"
+  },
+  "authors": [
+    {
+      "name": "Brecht Ceyssens",
+      "role": "Maintainer"
+    }
+  ],
+  "support": {
+    "issues": "https://www.drupal.org/project/issues/imagick"
+  }
+}

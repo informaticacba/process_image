@@ -1,0 +1,5 @@
+name: ngt_general
+type: module
+description: Módulo con las funciones transversales a los demas módulos custom
+core_version_requirement: ^8.8 || ^9
+package: NGT

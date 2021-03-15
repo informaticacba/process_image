@@ -1,0 +1,16 @@
+ngt.admin_process_images_form:  
+  path: '/admin/config/ngt/adminsettings/general/process/images'  
+  defaults:  
+    _form: '\Drupal\ngt_process_images\Plugin\Form\ProcessImagesGeneralForm'  
+    _title: 'Configuración general de la plataforma'  
+  requirements:  
+    _permission: 'access administration pages'  
+  options:  
+    _admin_route: TRUE  
+ngt_process_images.upload_images:
+  path: 'ngt/general/process/images/form/upload'
+  defaults:
+    _form: '\Drupal\ngt_process_images\Plugin\Form\UploadImagesForm'
+    _title: 'Carga de imágenes'
+  requirements:
+    _access: 'TRUE'

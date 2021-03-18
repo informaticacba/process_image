@@ -77,7 +77,7 @@ class UploadImagesForm extends ConfigFormBase {
           }
             
           // service scale image 
-          $urlImageScale = \Drupal::service('ngt_process_images.methodGeneral')->scaleImage($pic_fid, $pageSet, $scale);
+          $urlImageScale = \Drupal::service('ngt_process_images.methodGeneral')->scaleImage($pic_fid, $pageSet, '', $scale);
 
           // service get info new image
           $dataImageNew = \Drupal::service('ngt_process_images.methodGeneral')->getOrientation($pic_fid);

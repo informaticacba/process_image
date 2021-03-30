@@ -1,0 +1,32 @@
+diff --git a/geofield.module b/geofield.module
+index 2246242..ac87fa2 100644
+--- a/geofield.module
++++ b/geofield.module
+@@ -7,6 +7,12 @@
+ 
+ use Drupal\Core\Database\Database;
+ 
++// Ludwig integration for 'classmap' type phayes/geophp library.
++if (\Drupal::hasService('ludwig.require_once')) {
++  $ludwig_require_once = \Drupal::service('ludwig.require_once');
++  $ludwig_require_once->requireOnce('phayes/geophp', 'geoPHP.inc', dirname(__FILE__));
++}
++
+ /**
+  * Point feature constant.
+  *
+diff --git a/ludwig.json b/ludwig.json
+new file mode 100644
+index 0000000..7727c10
+--- /dev/null
++++ b/ludwig.json
+@@ -0,0 +1,9 @@
++{
++  "require": {
++    "phayes/geophp": {
++      "version": "v1.2",
++      "url": "https://github.com/phayes/geoPHP/archive/1.2.zip",
++      "disable_warnings": "TRUE"
++    }
++  }
++}
